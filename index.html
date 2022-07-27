@@ -7,32 +7,67 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>newsWeb</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Simple line icons-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-    <!-- Google fonts-->
+   <!--変更点-->
+
+
+
+    <!-- Google fonts　フォント-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="https://ryo-ko-ku.github.io/card004/StyleSheet1.css" rel="stylesheet" />
+
+
+    <!-- 変更点　CSS相対パスなのと数字に変更することに注意-->
+    <!--font-awesome&css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Core theme CSS (includes Bootstrap)CSS適用-->
+    <link href="StyleSheet2.css" rel="stylesheet" />
+
+
 </head>
+
+
+   
 <body>
     <div class="container text-center">
+
         <div class="row">
+
+
+            <!-- 変更点-->
+            <h3>画像をダブルクリックしていいね！<i class="fas fa-heart"></i>してね</h3>
+            <small>You liked it <span id="times">0</span>times</small>
+
             <div class="col-sm12">
-                <img src="image005.jpg" alt="Alternate Text"  id="image"/>
-                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-            
-                <div class="col-sm-4 text-right">
-                    <button type="button" onclick="location.href='https://ryo-ko-ku.github.io/newsWeb.ver1.00'">記事に戻る</button>
+
+                <!--変更点　class-->
+                <div class="img-container">
+                    <div class="loveMe" id="image"></div>
                 </div>
-            
+                <h2>山にもキャンプにも！　UL装備！</h2>
+                <p>
+                    最近UL（ウルトラライト）装備という言葉をよく耳にする。ULとは広義では装備の軽量化の意味であり、ひいては荷物の中身を厳選し可能な限り身軽に出かけ、深く自然と向き合おうとする考え方のことだ。 <br />
+                    わたしはこのキャンプブームに乗っかり、映えのキャンプをしていることに常々違和感を持っていた。確かに誰もがうらやむようなおしゃれなテントサイトというのは魅力の一つだろう。<br />
+                    だが同時にこうも思うのだ、他人の目を気にしてやるキャンプよりも、自分の道を究めたキャンプのほうが数倍面白いと。<br />
+                    UL装備のよいところ、それはリュック一つでどこにでも行ける身軽さだ。装備が重量化、量が増えるにつれ設営もまたものすごく大変になる。<br />
+                    それに比べてULならテントを張ればもう終わりである。根本的に、この両者の考えの違いはどこから来るのかと考えたところ、私は定住と放浪にあると思った。<br />
+                    定住はそこに根をはり居住性をよりよくしようという考えだ。しかし定住するならばわざわざ何もないところに一から設営するよりも、家でいいんではないか？　と思ってしまうのだ。<br />
+                    対して放浪とは何か？　一定の住居を持たず各地を転々とすることだ。男ならば未知や冒険という言葉にあこがれを持つ生き物だと私は考えているが、それが旅をすることや、山を登り、そして、まだ見ぬ未知を知ることにつながっていく。<br />
+                    しかしながら旅には危険が付きまとう、最低限でも暖をとるためにお湯ぐらいは作れるようにしたい。そこで紹介するのがsno-peakのシングルチタンマグとmon-beのアルパインサーモボトルだ。<br />
+                    まずシングルチタンマグから、このギアの特徴はチタン製で驚くほど軽いことと、シングル構造なのでそのまま直火にかけられる点だ。サイズも450ml、300mlとありスタッキング可能でお湯を火を使って沸かすという点においてはこれ以上ないほどのよき友だ。<br />
+                    次はmon-beのアルパインサーモボトルだ。このギアは一言で言ってしまえば厳冬期の山でも24時間、熱湯状態をキープできる。休憩時にお湯を沸かす手間すらもなく、さっとラーメンが食べれるのである。<br />
+                    旅に苦難はつきものだが上手にULギアを活用して乗り切ってみてほしい。（---2022/7/27　記者　江戸川）
+
+
+                </p>
+            </div>
+
+            <div class="col-sm-4 text-right">
+                <button type="button" onclick="location.href='https://ryo-ko-ku.github.io/newsWeb.ver1.00'">記事に戻る</button>
+            </div>
+
         </div>
     </div>
     
-   
+    <!-- 変更点　相対パスと数字に注意-->
+    <script src="Script2.js"></script>
 </body>
 </html>
